@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+Here is your `README.md` content in Markdown format:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# 🔧 Nexstem Pipeline Editor – DAG Builder (Frontend Intern Assignment)
 
-## Available Scripts
+A visually stunning, interactive, and fully functional Pipeline Editor built using React and React Flow. This tool lets users construct Directed Acyclic Graphs (DAGs) by adding nodes and connecting them with edges. The editor supports drag-and-drop, real-time DAG validation, auto layout, and more.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎨 **Modern UI** with gradient backgrounds, smooth animations, and clean layout
+- ➕ Add Nodes using a sleek modal form (not a prompt)
+- 🔗 Connect Nodes interactively with directional arrows
+- ❌ Delete selected nodes or edges using the Delete key
+- ✅ DAG Validation with instant feedback:
+  - At least 2 nodes
+  - No cycles
+  - All nodes connected
+  - No self-loops
+- 🧭 Auto Layout support using `dagre` for clear visual structure
+- 🧩 Modular components: `CustomNode`, `ControlsPanel`, `ValidationService`
+- 🧠 Real-time DAG logic maintained with clean state management
+- 📜 Instructions panel built-in: users always know what to do
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📸 Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Add screenshots of your UI here using:
+> `![Screenshot](./screenshots/ui.png)`
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+pipeline-editor/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── ControlsPanel.js
+│   │   └── CustomNode.js
+│   ├── utils/
+│   │   ├── dagValidation.js
+│   │   └── layoutHelper.js
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+├── package.json
+└── README.md
 
-### `npm run eject`
+````
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [React](https://reactjs.org/)
+- [React Flow](https://reactflow.dev/)
+- [Dagre](https://github.com/dagrejs/dagre)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📄 Setup Instructions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/pipeline-editor.git
+   cd pipeline-editor
+````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Install dependencies**
 
-### Code Splitting
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Run the development server**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Visit your app**
+   Open [http://localhost:3000](http://localhost:3000)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🧪 How to Use
 
-### Advanced Configuration
+* Click **Add Node** to input a name and place it into the graph
+* Click and drag from the green (right) handle to the red (left) handle of another node to connect
+* Press **Delete** to remove selected nodes/edges
+* Click **Auto Layout** to arrange the nodes neatly
+* Observe **DAG Validation Status** at the bottom of the screen
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🌐 Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> [Live Site on Vercel / Netlify](https://your-live-demo-link.com)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📹 Demo Video (Optional)
+
+> Upload your screen recording to Loom or YouTube and paste the link here
+
+---
+
+## 💡 Key Design Decisions
+
+* Used a modal for better UX over native `prompt()`
+* Leveraged `dagre` for clean layout generation
+* Modularized all logic and visual elements into separate files
+* Enhanced CSS for a professional, engaging experience
+
+---
+
+## 📚 References
+
+* [React Flow Docs](https://reactflow.dev/docs)
+* [DAG Validation via DFS](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)
+* [Dagre Layout](https://github.com/dagrejs/dagre)
+
+---
+
+## ✨ Bonus Ideas (Optional Extensions)
+
+* Add right-click context menu for nodes
+* JSON panel to show nodes/edges structure
+* Dark mode toggle
+* Export/import DAG as JSON
+
+---
+
+## 👨‍💻 Developed By
+
+**Sai Chandan Gundaboina**
+
+* [LinkedIn](https://www.linkedin.com/in/saichandanyadav/)
+* [GitHub](https://github.com/your-username)
+
+---
+
+## 📃 License
+
+This project is licensed under the [MIT License](LICENSE).
+
