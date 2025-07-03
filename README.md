@@ -1,4 +1,3 @@
-Here is your `README.md` content in Markdown format:
 
 ```markdown
 # 🔧 Nexstem Pipeline Editor – DAG Builder (Frontend Intern Assignment)
@@ -35,7 +34,6 @@ A visually stunning, interactive, and fully functional Pipeline Editor built usi
 ## 📦 Project Structure
 
 ```
-
 pipeline-editor/
 ├── public/
 │   └── index.html
@@ -51,6 +49,7 @@ pipeline-editor/
 │   └── styles.css
 ├── package.json
 └── README.md
+```
 
 ````
 
@@ -102,13 +101,7 @@ pipeline-editor/
 
 ## 🌐 Demo
 
-> [Live Site on Vercel / Netlify](https://your-live-demo-link.com)
-
----
-
-## 📹 Demo Video (Optional)
-
-> Upload your screen recording to Loom or YouTube and paste the link here
+> [Live Site on Vercel](https://nexstem-pipeline-editor-inky.vercel.app/)
 
 ---
 
@@ -143,7 +136,7 @@ pipeline-editor/
 **Sai Chandan Gundaboina**
 
 * [LinkedIn](https://www.linkedin.com/in/saichandanyadav/)
-* [GitHub](https://github.com/your-username)
+* [GitHub](https://github.com/Saichandanyadav)
 
 ---
 
